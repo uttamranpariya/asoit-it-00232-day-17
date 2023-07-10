@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfunction() {
+            const n1 = prompt("enter your name:")
+            document.getElementById('name').innerHTML = n1;
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="name"> Hello I am student of silveroak university </h1>
+    <button onclick="myfunction()">click me</button>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <p id="demo"></p>
+    <h1>loop statement:</h1>
+
+    <p id="demo2"></p>
+</head>
+
+<body>
+    <script>
+        function myfunction(p1, p2) {
+            return p1 * p2;
+        }
+
+        let p1 = prompt("first");
+        let p2 = prompt("second");
+        let res = myfunction(p1, p2);
+        document.getElementById("demo").innerHTML = res;
+
+        let text = "";
+
+        for (let i = 0; i < 5; i++) {
+            text += "The number is " + i + "<br>";
+        }
+
+        document.getElementById("demo2").innerHTML = text;
+    </script>
+</body>
+
+</html>
